@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<!--
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/JSP_Servlet/Html.html to edit this template
+-->
+<html>
+     <head>
+        <meta charset="UTF-8">
+        <title>Registro de Usuarios</title>
+        <link rel="stylesheet" href="estilo.css">
+    </head>
+
+    <body>
+        <div class="main-block">
+            <form method="POST" action="RegistraUsuarioServlet">
+                <h1>Registro de Usuarios</h1>
+                <fieldset>
+                    <legend>
+                        <h3>Datos del Usuario</h3>
+                    </legend>
+                    <div  class="detalles-principales">
+                        <div><label>Usuario*</label>
+                            <input type="text" name="usuario" required></div>
+                        <div><label>Nombre completo*</label>
+                            <input type="text" name="nombre" required></div>     
+                        <div><label>Password*</label>
+                            <input type="password" name="pass" required></div>
+                        <div><label>Edad*</label>
+                            <input type="number" name="edad" required></div>    
+                         <div><label>Genero*</label>
+                            <input type="text" name="genero" required></div>
+                        <div><label>Correo*</label>
+                            <input type="email" name="correo" required></div>
+                    </div>
+                </fieldset>
+                <button type="submit">Registrar</button>
+            </form>
+        </div> 
+    </body>
+</html>
